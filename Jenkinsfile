@@ -73,7 +73,7 @@ pipeline {
             }
         }
 
-        stage('Quality Gate') {
+        stage('UPLOAD TO NEXUS REPO') {
             steps {
                 nexusArtifactUploader(
                     nexusVersion: 'nexus3',
